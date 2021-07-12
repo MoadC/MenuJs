@@ -1,3 +1,3 @@
 # MenuJs
 
-Just trying create an interactive menu for fun.
+Just trying to create an interactive menu for fun.
