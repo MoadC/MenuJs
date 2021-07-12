@@ -12,9 +12,13 @@
   margin-bottom: 100px;
 }
 
+span {
+  color: red;
+}
 li {
   list-style: none;
   height: 25px;
+  cursor: pointer;
 }
 
 ul input {
@@ -35,6 +39,14 @@ ul::after {
   align-items: center;
   justify-content: space-evenly;
   width: 60%;
-  background-color: lawngreen;
+  background-color: rgb(134, 185, 82);
   padding-top: 20px;
+}
+
+ul > p {
+  margin-bottom: 15px;
+}
+
+.selected {
+  background-color: orangered;
 }
