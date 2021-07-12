@@ -83,8 +83,7 @@ window.addEventListener('load',function(){
         let liId = "item" + [index];
         newli.id = liId;
         //console.log(newli.id);
-        newli.addEventListener('click', select);
-        
+        newli.addEventListener('click', select);        
     }
 
 });
