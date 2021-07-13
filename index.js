@@ -8,56 +8,6 @@ var items= [
         name:'item1',
         price: 15,
         id:'item1',
-    },
-    {
-        name:'item1',
-        price: 15,
-        id:'item1',
-    },
-    {
-        name:'item1',
-        price: 15,
-        id:'item1',
-    },
-    {
-        name:'item1',
-        price: 15,
-        id:'item1',
-    },
-    {
-        name:'item1',
-        price: 15,
-        id:'item1',
-    },
-    {
-        name:'item1',
-        price: 15,
-        id:'item1',
-    },
-    {
-        name:'item1',
-        price: 15,
-        id:'item1',
-    },
-    {
-        name:'item1',
-        price: 15,
-        id:'item1',
-    },
-    {
-        name:'item1',
-        price: 15,
-        id:'item1',
-    },
-    {
-        name:'item1',
-        price: 15,
-        id:'item1',
-    },
-    {
-        name:'item1',
-        price: 15,
-        id:'item1',
     }
 ]; //12
 
@@ -67,6 +17,7 @@ window.addEventListener('load',function(){
     //console.log(li[1]);
     function select(){
         this.classList.toggle("selected");
+        console.log(document.querySelector("this > input[type=number]"));
     }
     // let li = document.getElementById("item");
     // li.addEventListener('click', select);
@@ -80,20 +31,13 @@ window.addEventListener('load',function(){
     for (let index = 0; index < lenLi; index++) {
         let newli = allLi[index];  
         //console.log("item" + [index]);
-        let liId = "item" + [index];
-        newli.id = liId;
+        //let liId = "item" + [index];
+        //newli.id = liId;
         //console.log(newli.id);
-        newli.addEventListener('click', select);        
+        newli.addEventListener('click', select);   // to apply it to every li individually.     
     }
 
-
-
 });
-
-
-
-
-
 
 function total(){
 
@@ -103,11 +47,13 @@ function total(){
     let chosen = document.getElementsByClassName('selected');
     let len = chosen.length;
     //console.log(len);
-    const container = document.querySelector("#testing");
-    const matches = container.querySelectorAll("li > input[type=number]");
+    const inputs = document.querySelectorAll("li.selected > input[type=number]");
+    //const matches = container.querySelectorAll("input[type=number]");
+    //console.log(container);
     for (let index = 0; index < len; index++) {
         //console.log(matches[index].value);
-        result += chosen[index].value * matches[index].value;
+        //console.log(matches[index]); 
+        result += chosen[index].value * inputs[index].value;
     }
     const text = results.innerText= "your total is : ";
     results.value =text + result ;

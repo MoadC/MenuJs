@@ -24,7 +24,7 @@ li {
 ul input {
   width: 40px;
   border: none;
-  background-color: lightyellow;
+  background-color: rgb(230, 230, 28);
 }
 
 ul::after {
@@ -48,9 +48,14 @@ ul > p {
 }
 
 .selected {
-  background-color: orangered;
+  background-color: rgb(192, 107, 76);
 }
 
 #results {
   text-align: center;
+}
+
+.lineBtn,
+.lineLi {
+  display: inline-block;
 }
