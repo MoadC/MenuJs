@@ -25,6 +25,7 @@ ul input {
   width: 40px;
   border: none;
   background-color: rgb(230, 230, 28);
+  text-align: center;
 }
 
 ul::after {

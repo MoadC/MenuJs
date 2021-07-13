@@ -17,7 +17,7 @@ window.addEventListener('load',function(){
     //console.log(li[1]);
     function select(){
         this.classList.toggle("selected");
-        console.log(document.querySelector("this > input[type=number]"));
+        //console.log(document.querySelector("this > input[type=number]"));
     }
     // let li = document.getElementById("item");
     // li.addEventListener('click', select);
@@ -37,7 +37,24 @@ window.addEventListener('load',function(){
         newli.addEventListener('click', select);   // to apply it to every li individually.     
     }
 
+    document.querySelector('#reset').addEventListener('click', function(e) {
+    //e.preventDefault();
+    //receipt = {};
+    document.getElementById('results').value = '';
+    let chosen = document.getElementsByClassName('selected');
+    //console.log(chosen)
+    const inputs = document.querySelectorAll("li.selected > input[type=number]");
+    let len = chosen.length;
+    for (let index = len-1 ; index >= 0; index--) {
+        chosen[index].classList.remove('selected');
+        //console.log('removed' + [index]);
+        inputs[index].value=1 ;
+    }
+    });
+
+
 });
+
 
 function total(){
 
