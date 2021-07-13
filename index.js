@@ -79,14 +79,21 @@ window.addEventListener('load',function(){
     let lenLi = allLi.length;
     for (let index = 0; index < lenLi; index++) {
         let newli = allLi[index];  
-        console.log("item" + [index]);
+        //console.log("item" + [index]);
         let liId = "item" + [index];
         newli.id = liId;
         //console.log(newli.id);
         newli.addEventListener('click', select);        
     }
 
+
+
 });
+
+
+
+
+
 
 function total(){
 
@@ -95,9 +102,12 @@ function total(){
     //results.value='';
     let chosen = document.getElementsByClassName('selected');
     let len = chosen.length;
-    console.log(len);
-    for (let index = 0; index < len; index++) {       
-        result += chosen[index].value;
+    //console.log(len);
+    const container = document.querySelector("#testing");
+    const matches = container.querySelectorAll("li > input[type=number]");
+    for (let index = 0; index < len; index++) {
+        //console.log(matches[index].value);
+        result += chosen[index].value * matches[index].value;
     }
     const text = results.innerText= "your total is : ";
     results.value =text + result ;
