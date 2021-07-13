@@ -50,3 +50,7 @@ ul > p {
 .selected {
   background-color: orangered;
 }
+
+#results {
+  text-align: center;
+}

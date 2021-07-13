@@ -68,12 +68,12 @@ window.addEventListener('load',function(){
     function select(){
         this.classList.toggle("selected");
     }
-    let li = document.getElementById("item");
-    li.addEventListener('click', select);
-    let li2 = document.getElementById("item2");
-    li2.addEventListener('click', select);
-    let li3 = document.getElementById("item3");
-    li3.addEventListener('click', select);
+    // let li = document.getElementById("item");
+    // li.addEventListener('click', select);
+    // let li2 = document.getElementById("item2");
+    // li2.addEventListener('click', select);
+    // let li3 = document.getElementById("item3");
+    // li3.addEventListener('click', select);
 
     const allLi = document.getElementsByTagName('li');
     let lenLi = allLi.length;
