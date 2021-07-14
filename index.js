@@ -47,9 +47,9 @@ window.addEventListener('load',function(){
     let len = chosen.length;
     for (let index = len-1 ; index >= 0; index--) {
         chosen[index].classList.remove('selected');
-        //console.log('removed' + [index]);
+         //console.log('removed' + [index]);
         inputs[index].value=1 ;
-    }
+        }
     });
 
     var modal = document.getElementById("myModal");
