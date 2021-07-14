@@ -75,8 +75,8 @@ btn.onclick = function() {
         text2 += inputs[index].value + "x " + chosen[index].textContent + ".<br>" ;
         result += chosen[index].value * inputs[index].value;
     }
-    const text = "<br><br>your total is : ";
-    modalContent.innerHTML = "You bought : <br><br>" + text2 + text + result;
+    const text = "<br><br>Your total is : <strong>";
+    modalContent.innerHTML = "<h1 style='text-align:center; text-decoration: underline'>Your Receit</h1><br><br> You bought : <br><br>" + text2 + text + result + "</strong>dh<br><br><p style='color:rgb(68, 32, 39); text-align:center; font-weight:1000'> Thank you! Come again!</p>";
 }
 
 // When the user clicks on <span> (x), close the modal

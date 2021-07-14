@@ -79,11 +79,17 @@ ul > p {
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background: rgb(82, 226, 145);
+  background: linear-gradient(
+    90deg,
+    rgba(82, 226, 145, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /*background-color: #fefefe;*/
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 65%;
 }
 
 /* The Close Button */
