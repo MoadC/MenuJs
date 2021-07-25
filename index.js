@@ -17,7 +17,7 @@ window.addEventListener('load',function(){
     //console.log(li[1]);
     function select(){
         this.classList.toggle("selected");
-        //console.log(document.querySelector("this > input[type=number]"));
+        this.parentNode.classList.toggle("select");
     }
     // let li = document.getElementById("item");
     // li.addEventListener('click', select);
@@ -43,7 +43,7 @@ window.addEventListener('load',function(){
     document.getElementById('results').value = '';
     let chosen = document.getElementsByClassName('selected');
     //console.log(chosen)
-    const inputs = document.querySelectorAll("li.selected > input[type=number]");
+    const inputs = document.querySelectorAll("div.select > input[type=number]");
     let len = chosen.length;
     for (let index = len-1 ; index >= 0; index--) {
         chosen[index].classList.remove('selected');
@@ -65,7 +65,7 @@ btn.onclick = function() {
     modal.style.display = "block";
     let result = 0;
   //console.log(modalContent.textContent);
-    const inputs = document.querySelectorAll("li.selected > input[type=number]");
+    const inputs = document.querySelectorAll("div.select > input[type=number]");
     let chosen = document.getElementsByClassName('selected');
     let len = chosen.length;
     let text2 = '';
@@ -102,7 +102,7 @@ function total(){
     let chosen = document.getElementsByClassName('selected');
     let len = chosen.length;
     //console.log(len);
-    const inputs = document.querySelectorAll("li.selected > input[type=number]");
+    const inputs = document.querySelectorAll("div.select > input[type=number]");
     //const matches = container.querySelectorAll("input[type=number]");
     //console.log(container);
     for (let index = 0; index < len; index++) {

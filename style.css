@@ -58,6 +58,14 @@ ul > p {
   background-color: rgb(192, 107, 76);
 }
 
+.line {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.line input {
+  margin-bottom: 6px;
+}
 #results {
   text-align: center;
 }
