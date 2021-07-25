@@ -43,10 +43,12 @@ window.addEventListener('load',function(){
     document.getElementById('results').value = '';
     let chosen = document.getElementsByClassName('selected');
     //console.log(chosen)
+    let divs = document.querySelectorAll("div.select");
     const inputs = document.querySelectorAll("div.select > input[type=number]");
     let len = chosen.length;
     for (let index = len-1 ; index >= 0; index--) {
         chosen[index].classList.remove('selected');
+        divs[index].classList.remove('select');
          //console.log('removed' + [index]);
         inputs[index].value=1 ;
         }
