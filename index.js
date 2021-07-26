@@ -26,7 +26,7 @@ window.addEventListener('load',function(){
     // let li3 = document.getElementById("item3");
     // li3.addEventListener('click', select);
 
-    const allLi = document.getElementsByTagName('li');
+    const allLi = document.querySelectorAll("div > li")
     let lenLi = allLi.length;
     for (let index = 0; index < lenLi; index++) {
         let newli = allLi[index];  
