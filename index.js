@@ -112,7 +112,7 @@ function total(){
         //console.log(matches[index]); 
         result += chosen[index].value * inputs[index].value;
     }
-    const text = results.innerText= "your total is : ";
+    const text = results.innerText= "Your total is : ";
     results.value =text + result ;
     result = 0;
 }
